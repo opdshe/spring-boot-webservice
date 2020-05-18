@@ -13,14 +13,14 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class PostsRepositoryTest {
+public class PostRepositoryTest {
 
     @Autowired
-    PostsRepository postsRepository;
+    PostRepository postRepository;
 
     @After
     public void cleanup(){
-        postsRepository.deleteAll();
+        postRepository.deleteAll();
     }
 
     @Test
@@ -28,14 +28,14 @@ public class PostsRepositoryTest {
         //given
         String title = "테스트 게시글";
         String content = "테스트 바디";
-        postsRepository.save(Post.builder()
+        postRepository.save(Post.builder()
         .title(title)
         .content(content)
         .author("opdshe@naver.com")
         .build());
 
         //when
-        List<Post> postList = postsRepository.findAll();
+        List<Post> postList = postRepository.findAll();
 
         //then
         Post post = postList.get(0);
