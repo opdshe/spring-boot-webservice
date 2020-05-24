@@ -20,7 +20,7 @@ public class PostRepositoryTest {
     PostRepository postRepository;
 
     @After
-    public void cleanup(){
+    public void cleanup() {
         postRepository.deleteAll();
     }
 
@@ -30,10 +30,10 @@ public class PostRepositoryTest {
         String title = "테스트 게시글";
         String content = "테스트 바디";
         postRepository.save(Post.builder()
-        .title(title)
-        .content(content)
-        .author("opdshe@naver.com")
-        .build());
+                .title(title)
+                .content(content)
+                .author("opdshe@naver.com")
+                .build());
 
         //when
         List<Post> postList = postRepository.findAll();
@@ -47,12 +47,12 @@ public class PostRepositoryTest {
     @Test
     public void BaseTimeEntity_등록() {
         // given
-        LocalDateTime now = LocalDateTime.of (2020,5,21,10,10,10);
+        LocalDateTime now = LocalDateTime.of(2020, 5, 21, 10, 10, 10);
         postRepository.save(Post.builder()
-        .title("title")
-        .content("content")
-        .author("author")
-        .build());
+                .title("title")
+                .content("content")
+                .author("author")
+                .build());
 
         // when
         List<Post> postList = postRepository.findAll();
@@ -64,5 +64,4 @@ public class PostRepositoryTest {
         assertThat(post.getCreateDate()).isAfter(now);
         assertThat(post.getModifiedDate()).isAfter(now);
     }
-
 }

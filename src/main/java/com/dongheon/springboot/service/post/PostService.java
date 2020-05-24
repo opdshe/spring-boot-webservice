@@ -32,5 +32,4 @@ public class PostService {
                 .orElseThrow(()-> new IllegalArgumentException("해당 사용자가 없습니다. id="+id));
         return new PostResponseDto(entity);
     }
-
 }
