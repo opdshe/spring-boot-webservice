@@ -2,7 +2,9 @@ package com.dongheon.springboot.web.dto;
 
 import com.dongheon.springboot.domain.posts.Post;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
+@NoArgsConstructor
 @Getter
 public class PostResponseDto {
     private Long id;

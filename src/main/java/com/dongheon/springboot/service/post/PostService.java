@@ -31,13 +31,14 @@ public class PostService {
         return id;
     }
 
+    @Transactional(readOnly = true)
     public PostResponseDto findById(Long id) {
         Post entity = postRepository.findById(id)
                 .orElseThrow(()-> new IllegalArgumentException("해당 사용자가 없습니다. id="+id));
         return new PostResponseDto(entity);
     }
 
-    @Transactional
+    @Transactional(readOnly = true)
     public List<PostListResponseDto> findAllDesc() {
         return postRepository.finAllDesc().stream()
                 .map(PostListResponseDto::new)
