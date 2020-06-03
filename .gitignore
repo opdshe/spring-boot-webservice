@@ -2,3 +2,14 @@
 .gradle
 .idea
 application-oauth.properties
+build/classes/
+build/generated/
+build/reports/
+build/resources/main/application.properties
+build/resources/main/static/
+build/resources/main/templates/
+build/test-results/
+build/tmp/
+local.properties
+src/test/resources/
+webservice.iml
