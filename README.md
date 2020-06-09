@@ -16,3 +16,10 @@
   - 게시글 수정, 삭제 화면 작성 V
 - 로그인 기능 구현하기
 
+## 현재 상황
+## screenshot
+<p align="left" padding="100">
+  <img width="400" height ="500" src="image/index_page.JPG">
+  <img width="400" height ="500" src="image/post_update.JPG">
+</p>
+
