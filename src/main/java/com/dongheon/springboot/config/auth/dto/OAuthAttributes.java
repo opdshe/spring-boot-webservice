@@ -21,6 +21,7 @@ public class OAuthAttributes {
                            String name, String email, String picture) {
         this.attributes = attributes;
         this.nameAttributeKey = nameAttributeKey;
+        this.name = name;
         this.email = email;
         this.picture = picture;
     }
