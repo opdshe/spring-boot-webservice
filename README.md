@@ -19,8 +19,6 @@
 
 ## 현재 상황
 ## screenshot
-<p align="left" padding="100">
-  <img width="400" height ="500" src="image/index_page.JPG">
-  <img width="400" height ="500" src="image/post_update.JPG">
-</p>
+![index](image/index.png)
+![index](image/post-save.png)
 

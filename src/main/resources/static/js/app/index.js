@@ -4,7 +4,6 @@ var main = {
         $('#btn-save').on('click', function () {
             _this.save();
         });
-
         $('#btn-update').on('click', function () {
             _this.update();
         });
@@ -20,7 +19,7 @@ var main = {
         };
         $.ajax({
             type: 'POST',
-            url: '/api/v1/post',
+             url: '/api/v1/post',
             dataType: 'json',
             contentType: 'application/json; charset = utf-8',
             data: JSON.stringify(data)
