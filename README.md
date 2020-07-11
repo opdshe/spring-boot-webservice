@@ -24,3 +24,7 @@
   <img width="400" height ="500" src="image/post_update.JPG">
 </p>
 
+# 개발 환경
+- 개발 언어: Java
+- 프레임워크: Spring boot, Spring data jpa
+- 데이터베이스: Google Cloud Platform SQL (MySQL)
