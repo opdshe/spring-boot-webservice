@@ -22,3 +22,7 @@
 ![index](image/index.png)
 ![index](image/post-save.png)
 
+# 개발 환경
+- 개발 언어: Java
+- 프레임워크: Spring boot, Spring data jpa
+- 데이터베이스: Google Cloud Platform SQL (MySQL)
